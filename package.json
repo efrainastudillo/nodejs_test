@@ -1,0 +1,21 @@
+{
+  "name": "mocha_test",
+  "version": "1.0.0",
+  "description": "Testing Mocha Framework and exporting Result to an XML file",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive --colors --reporter xunit > test-reports.xml",
+    "test-console": "./node_modules/.bin/mocha --recursive --colors --reporter spec"
+  },
+  "author": "Efrain Astudillo",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "express": "^4.15.4",
+    "mocha": "^3.5.0",
+    "request": "^2.81.0"
+  }
+}
