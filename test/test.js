@@ -18,7 +18,12 @@ describe('My Module' , function(){
   it('should return 4', function(){
     var result = myMod.add(2,2); 
     result.should.equal(4);
-  })	
+  })
+  
+  it('should return 16', function(){
+    var result = myMod.mult(4,4); 
+    result.should.equal(16);
+  })
 
   it('should say Hello!', function(){
     var result = myMod.hello() 
